@@ -1,0 +1,11 @@
+Incluí los meta para descripcion y keywords
+tiene incluído el correspondiente <title> para cada HTML
+Solo usé un h1 en toda la web, después en cada html un solo h2 como encabezado (no title) de cada html. Y en cuanto a los h3 los usé como subtitulos/títulos para cada sección dentro de cada html.
+
+Usé un map y un each para establecer colores en los botones de Go back to the Top.
+
+Usé el & para establecer un hover.
+
+Utilicé un extend en los botones para agregarle un font-size más grande para mostrar la diferencia y el uso del mismo.
+
+Y por último usé un mixin para darle borde y fontsize a los h2

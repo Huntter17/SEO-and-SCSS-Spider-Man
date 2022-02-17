@@ -1,0 +1,83 @@
+@import "variables";
+@import "mediaQueries";
+
+$mapa: (
+    spidey: red,
+    films: blue,
+    gallery: #03035c,
+    contact: #5f0101
+);
+
+@each $section, $bgcolor in $mapa {
+    .boton-#{$section}{
+        background-color: $bgcolor;
+    }
+}
+
+
+header {
+    background-image: $navOne;
+}
+
+header nav ul li {
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    &:hover {
+        border: $border;
+    border-radius: 15px;
+    background-color: $redOne;
+    padding: 3px;
+    }
+}
+
+h2 {
+    background-color: $redOne;
+    border: $border;
+}
+
+footer {
+    background-color: $footer;
+}
+
+.spidey_article1, .spidey_article2, .spidey_article3 {
+    border: $border;
+    background-color: $redOne;
+}
+
+.main-films article {
+    border: $border;
+    background-color: $redOne;
+}
+
+.main-contact form {
+    border: $border;
+    background-color: $redOne;
+}
+
+.button {
+    margin: 20px auto;
+    font-size: 20px;
+    &:hover {
+        text-decoration-line: underline;
+    }
+}
+
+.boton-spidey {
+    @extend.button;
+    font-size: 30px;
+}
+
+.boton-gallery, .boton-films {
+    @extend.button;
+    margin: 80px 10px;
+}
+
+@mixin sizes($br-rad, $ft-sz) {
+    border-radius: $br-rad;
+    font-size: $ft-sz;
+  }
+  
+  h2 {
+    @include sizes(15px, 40px)
+  }
